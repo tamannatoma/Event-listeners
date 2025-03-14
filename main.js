@@ -8,7 +8,9 @@ function zoomIn() {
 
 
 function zoomOut() {
-    img.width -= 100;
+    if (img.width > 100) {
+        img.width -= 100;
+    }
 }
 
 zoomINbtn.addEventListener("click", zoomIn);
